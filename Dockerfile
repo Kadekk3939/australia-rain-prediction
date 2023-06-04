@@ -3,7 +3,7 @@ FROM python
 WORKDIR /working
 
 # Install required libraries
-RUN pip install scikit-learn keras numpy matplotlib pandas jupyter
+RUN pip install scikit-learn keras numpy matplotlib pandas jupyter seaborn
 
 # Expose the Jupyter Notebook port
 EXPOSE 8888
