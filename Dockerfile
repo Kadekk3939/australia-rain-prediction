@@ -1,9 +1,11 @@
 FROM python
 
-WORKDIR /working
-
 # Install required libraries
-RUN pip install scikit-learn keras numpy matplotlib pandas jupyter seaborn
+COPY requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
+
+# Set working directory
+WORKDIR /working
 
 # Expose the Jupyter Notebook port
 EXPOSE 8888
