@@ -1,4 +1,5 @@
-FROM python
+# Choose Python version
+FROM python:3.7.9
 
 # Install required libraries
 COPY requirements.txt /requirements.txt
