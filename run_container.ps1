@@ -1,5 +1,7 @@
-# Build image first
+# Build image first (from PowerShell)
 # docker build -t biai-project .
+
+# Set Execution Policy to run scripts
 
 # Run container
 Start-Job {
